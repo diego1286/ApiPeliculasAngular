@@ -1,0 +1,22 @@
+<div class="alert alert-info">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-left">
+        <h3 routerLink="/home" class="cursor-pointer">
+          <img src="../../assets/images/logoPelis.png" alt="logo" height="70" width="90" class="img-fluid">
+        </h3>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <app-session></app-session>
+      </div>
+  
+      <div class="col-md-4">
+        <form (submit)="buscarPeliculas($event)">
+          <div class="input-group">
+            <input type="text" class="form-control" name="movieTitle" [(ngModel)]="movieTitle" autofocus placeholder="Buscar Películas">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

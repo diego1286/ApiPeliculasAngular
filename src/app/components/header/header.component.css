@@ -1,0 +1,30 @@
+/* Estilos para alinear elementos uno al lado del otro */
+.row.align-items-center > div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* Estilo para ajustar el margen entre elementos */
+  .col-md-4,
+  .col-md-8 {
+    margin-bottom: 0; /* Elimina el margen inferior */
+  }
+  
+  /* Ajusta el margen derecho del formulario */
+  .form-control {
+    margin-right: 10px;
+  }
+  
+  /* Estilo para el botón de búsqueda */
+  .btn-search {
+    background-color: #007bff; /* Cambia el color de fondo del botón */
+    color: white; /* Cambia el color del texto del botón */
+    border: none; /* Quita el borde del botón */
+    cursor: pointer;
+  }
+  
+  /* Cambia el color de fondo del botón al pasar el ratón por encima */
+  .btn-search:hover {
+    background-color: #0056b3;
+  }
+  

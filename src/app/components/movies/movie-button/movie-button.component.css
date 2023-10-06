@@ -1,0 +1,22 @@
+/* Estilo personalizado para el botón */
+.btn-custom {
+    background-color: #ff5733; /* Color de fondo llamativo */
+    color: #fff; /* Color del texto en blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interno más pequeño */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave para color de fondo y escala */
+  }
+  
+  .btn-custom:hover {
+    background-color: #ff351b; /* Color de fondo al pasar el cursor */
+    transform: scale(1.05); /* Escala ligeramente más grande al pasar el cursor */
+  }
+  
+  /* Estilo para el ícono */
+  .btn-custom i {
+    font-size: 18px; /* Tamaño de fuente del ícono */
+    margin-right: 5px; /* Espacio a la derecha del ícono */
+  }
+  

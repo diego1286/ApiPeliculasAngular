@@ -1,0 +1,10 @@
+/* Añade espacio entre los elementos del formulario */
+.custom-form .form-group {
+    margin-bottom: 20px !important;
+  }
+  
+  /* Añade espacio entre el botón y los elementos anteriores */
+  .custom-form .custom-button {
+    margin-top: 20px !important;
+  }
+  

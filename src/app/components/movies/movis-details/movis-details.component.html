@@ -1,0 +1,55 @@
+<div class="text-center" *ngIf="!movie">
+  <img src="../../assets/images/loading.gif" alt="">
+</div>
+
+<div class="row" *ngIf="movie">
+  <div class="col-md-4">
+    <img [src]="'https://image.tmdb.org/t/p/w200' + movie.poster_path" [alt]="movie.title" class="card-img-top movie-poster">
+  </div>
+  <div class="col-md-8">
+    <h3>{{movie.title}}</h3>
+    <p>{{ movie.release_date | date:'yyyy' }}</p>
+    <div class="table-responsive">
+      <table class="table table-bordered custom-table">
+        <tbody>
+          <tr>
+            <td class="table-primary text-center"><strong>Genero</strong></td>
+            <td>
+              <span *ngFor="let genere of  movie.genres" class="badge badge-primary badge-pill genre-badge">
+                {{genere.name}}
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-primary text-center">Compañias Productoras</td>
+            <td>
+              <span *ngFor="let production_companies of  movie.production_companies" class="badge badge-success badge-pill company-badge">
+                {{production_companies.name}}
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-primary text-center">Lenguaje</td>
+            <td>
+              <span *ngFor="let spoken_languages of  movie.spoken_languages" class="badge badge-info badge-pill language-badge">
+                {{spoken_languages.name}}
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-primary text-center">Duración</td>
+            <td>
+              <span class="badge badge-info badge-pill duration-badge custom-badge text-center">{{movie.runtime}} minutos</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-primary text-center">Resumen</td>
+            <td>
+              <span class="badge badge-light badge-pill overview-badge custom-badge text-center">{{movie.overview}}</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

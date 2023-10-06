@@ -1,0 +1,39 @@
+
+.movie-poster {
+    max-width: 400px; 
+  }
+  
+  .genre-badge,
+  .company-badge,
+  .language-badge {
+    color: rgb(4, 4, 4); 
+    font-size: 19px; 
+    margin-right: 10px; 
+    margin-top: 10px; 
+    padding: 5px 10px; 
+  }
+  table td {
+    font-size: 16px; 
+  }
+  
+  .overview-badge {
+    word-wrap: break-word; 
+    width: 100%; 
+    white-space: normal; 
+    border: none; 
+    font-size: 16px; 
+    text-align: left; 
+}
+
+.custom-table {
+  font-size: 16px; 
+  color: black;   
+}
+
+
+.custom-badge {
+  font-size: 16px; 
+  color: black;   
+}
+
+  
